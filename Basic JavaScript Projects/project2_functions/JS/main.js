@@ -6,3 +6,8 @@ function myFunction() { //making my function
     // thing i want to modify is in my html. Then I set it to be the value of sentence. 
 
 }
+
+function MyFunctionTwo() {
+    const myElement = document.getElementById("change_color");
+    myElement.style.color = "green";
+}
