@@ -76,7 +76,7 @@ document.getElementById("team").innerHTML = team.description(); // this calls th
 function break_statement() {
     let message = "";
     for ( let x = 0; x<5; x++) {
-        if (x>2) {break;}
+        if (x>2) {break;} // the for loop breaks (jumps out of loop) when this returns true
         message += "the for loop will stop when " + x + " is equal to 2 " + "<br>";
     }
     document.getElementById("break").innerHTML = message;
@@ -85,7 +85,7 @@ function break_statement() {
 function continue_statement() {
     let message = "";
     for ( let x = 0; x<10; x++) {
-        if (x === 4 ) {continue;}
+        if (x === 4 ) {continue;} // here the for loop ignores this point
         message += "the number is " + x + "<br>";
     }
     document.getElementById("continue").innerHTML = message;
