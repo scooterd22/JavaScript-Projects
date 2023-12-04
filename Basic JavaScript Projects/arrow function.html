@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> this is a test </title>
+
+    </head>
+    <body>
+    <p id="test" onclick="myfunction()"> click to run</p>
+
+    <p id="displayname" onclick="myfunctiontwo()"> here </p>
+
+
+    <script>
+        var bunny;
+        bunny = (type) => "these are my fav bunny type: " + type;
+        document.getElementById("test").innerHTML = bunny("lop, flemish, and english lop")
+
+        // sets names equal to the array 
+        var names = ["scott", "jo", "willow"]; 
+        // makes a function that checks the names part for willow 
+        checknames = (names) => names === "willow";
+
+        // runs the function with some to iterate through the array of names and display the name
+        function myfunctiontwo() {
+            document.getElementById("displayname").innerHTML = names.some(checknames);
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
