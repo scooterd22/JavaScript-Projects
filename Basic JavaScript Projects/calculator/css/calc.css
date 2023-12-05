@@ -1,0 +1,95 @@
+html {
+    font-size: 70%; 
+    /* sets a border so nothing goes off screen */
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    /* we select all the elements with the universal selector */
+    margin: 0;
+    padding: 0;
+    /* this means elements will use the box-sizing of their parent */
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 2px solid hotpink;
+    border-radius: 7px;
+    position: absolute;
+    /* 20 and 21 move it to the top left */
+    top: 50%;
+    left: 50%;
+    /* 24 then centers it */
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: grey;
+    color: hotpink;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid limegreen;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: hotpink;
+    /* this gradient goes from top to bottom, the starting color is transparent, fully transparent up to 50% way through, the color of the gradient is last */
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, pink);
+    /* both of these together 50 and 51 create a subtle shadow effect for text and boses */
+    text-shadow: 0 1px darkorchid;
+    box-shadow: insert 0 0 0 1px rgba(255, 255, 255, .05),
+    inset 0 1px 0 0 rgba(255, 255, 255, .05),
+    inset 0 -1px 0 0 rgba(255, 255, 255 , .05),
+    0 1px 0 0 rgba(255, 255, 255, .05)
+}
+
+button:hover {
+    background-color: #55c9a8
+
+}
+
+.operator {
+    color: hotpink;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, pink);
+    background-color: lightgrey;
+    
+}
+
+.all-clear {
+    background-color: white;
+    border-color: orange;
+    color: orange;
+}
+
+.equal-sign {
+    background-color: white;
+    border-color: darkgreen;
+    color: hotpink;
+    height: 100%;
+    /* specifies an items location within a grid container, first value is the starting row line, second is the starting column line, third is the ending row line, and fourth is the ending column line */
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: limegreen;
+}
+
+.calculator-keys {
+    display: grid;
+    /* this sets up a grid with 4 columns the size of 1fr (one fractional unit), that distrubtes the avalible space equally. */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
