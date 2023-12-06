@@ -9,7 +9,7 @@
     width: 600px;
     height: 200px;
     float: left;
-    /* used this for debugging border: 2px solid limegreen; */
+    border: 2px solid limegreen;
 }
 
 #totalPRice {

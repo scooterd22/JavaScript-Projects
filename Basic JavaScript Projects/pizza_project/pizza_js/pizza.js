@@ -22,7 +22,7 @@ function getReceipt() {
         sizeTotal = 10;
     } else if (selectedSize === "large pizza") {
         sizeTotal = 14;
-    } else if (selectedSize === "xl pizza") {
+    } else if (selectedSize === "extra large pizza") {
         sizeTotal = 16;  
     }
     runningTotal = sizeTotal;
