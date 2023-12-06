@@ -59,7 +59,7 @@ function getTopping(runningTotal,text1) {
     // if topping count is greater than 1 
     if (toppingCount > 1) {
         // then set toppingtotal = to one
-        toppingTotal = (toppingCount = 1);
+        toppingTotal = (toppingCount - 1);
     } else {
         // if it isn't greater than one then they selected no toppings
         toppingTotal = 0;
