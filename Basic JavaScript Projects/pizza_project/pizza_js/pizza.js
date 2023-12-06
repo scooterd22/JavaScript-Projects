@@ -108,7 +108,6 @@ function getSauce(runningTotal,text1) {
     console.log("total selected topping items: " +toppingCount);
     console.log("total selected sauce choices:" + sauceCount);
     console.log(toppingCount+" topping - 1 free topping = "+"$"+toppingTotal+".00");
-    console.log(sauceCount+ "sauce - 1 free sauce = "+"$"+sauceTotal+".00");
     console.log("topping text1: "+text1);
     console.log("sauce text1: +"+text1);
     console.log("purchase total: "+"$"+runningTotal+".00");
