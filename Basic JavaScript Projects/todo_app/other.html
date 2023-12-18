@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title> other </title>
+    </head>
+    <body>
+    
+    <p id="bunnytest"> </p>
+
+
+
+    <script>
+        // var bunnyobject = '{"name":"leela", "age":"3", "type":"lop" }';
+        // sets the data to be saved locally in browser
+        localStorage.setItem('name', 'leela');
+        document.getElementById('bunnytest').innerHTML = localStorage.getItem('name');
+
+
+
+
+        // // converted into json
+        // var JSONstring = JSON.parse(bunnyobject);
+
+        // document.getElementById("bunnytest").innerHTML = JSONstring.age + " is how old leela is " +JSONstring.type + " is what type she is.";
+    </script>
+
+
+    
+    </body>
+</html>
